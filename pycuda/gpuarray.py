@@ -1524,13 +1524,13 @@ def transpose(a, axes=None):
     return a.transpose(axes)
 
 
-def reshape(a, shape):
+def reshape(a, *shape, **kwargs):
     """Gives a new shape to an array without changing its data.
 
     .. versionadded:: 2015.2
     """
 
-    return a.reshape(shape)
+    return a.reshape(*shape, **kwargs)
 
 # }}}
 
